@@ -1,24 +1,31 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Character} from "./model/Character";
+import axios from "axios";
+import * as https from "https";
 
 function App() {
+
+  const [characters, setCharacters] = useState<Character[]>([])
+
+  function loadCharacters(){
+    axios.get("https://hp-api.onrender.com/api/characters")
+    .then((response) => {
+      setCharacters(response.data)
+    })
+        .catch((error) => {
+      console.error(error)
+    })
+  }
+
+  useEffect(() => {
+    loadCharacters()
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
 }
