@@ -1,0 +1,14 @@
+.homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: maroon;
+
+}
+
+.p-homepage{
+    color: gold;
+    font-size: large;
+    font-family: cursive;
+}

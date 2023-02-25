@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    flex-row: row wrap;
+    justify-content: space-evenly;
+    background-color: maroon;
+    align-items: center;
+}
+
+.button-header{
+    height: 50px;
+    width: 80px;
+    background-color: burlywood;
+    padding: 5px;
+
+}
+
+.link{
+    text-decoration: none;
+}
