@@ -4,6 +4,7 @@ import './App.css';
 import {Character} from "./model/Character";
 import axios from "axios";
 import * as https from "https";
+import CharacterGallery from "./component/CharacterGallery";
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-
+    <CharacterGallery characters={characters}/>
     </div>
   );
 }
