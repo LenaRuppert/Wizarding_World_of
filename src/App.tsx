@@ -5,6 +5,9 @@ import {Character} from "./model/Character";
 import axios from "axios";
 import * as https from "https";
 import CharacterGallery from "./component/CharacterGallery";
+import HomePage from "./component/Homepage";
+import {Route, Routes} from "react-router-dom";
+import Header from "./component/Header";
 
 function App() {
 
@@ -26,7 +29,11 @@ function App() {
 
   return (
     <div className="App">
-    <CharacterGallery characters={characters}/>
+    <Header />
+      <Routes>
+        <Route path={"/"} element={<HomePage/>}/>
+        <Route path={"/characters"} element={<CharacterGallery characters={characters}/>}/>
+      </Routes>
     </div>
   );
 }
