@@ -6,8 +6,9 @@ export default function Header(){
 
     return (
         <header className={"header"}>
-        <button><Link to={"/"}>Home</Link></button>
-        <button><Link to={"/characters"}>Characters</Link></button>
+            <h1>The Wizarding World of Dinah Ruppert</h1>
+        <button className={"button-header"}><Link className={"link"} to={"/"}>Home</Link></button>
+        <button className={"button-header"}><Link className={"link"} to={"/characters"}>Characters</Link></button>
         </header>
     )
 }

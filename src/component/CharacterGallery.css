@@ -1,6 +1,6 @@
 .character-gallery-header{
     display: flex;
-    flex-row: row wrap;
+    flex-direction: column;
     justify-content: center;
     background-color: maroon;
 }
