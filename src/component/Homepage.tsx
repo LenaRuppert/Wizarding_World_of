@@ -1,14 +1,27 @@
 import "./Homepage.css"
 import * as https from "https";
+import {useEffect, useState} from "react";
 
+type HomepageProps = {
 
-
+}
 
 export default function HomePage(){
-    return(
-        <div className={"homepage"}>
-            <p className={"p-homepage"}>Zu welchem Haus gehörst du?</p>
-            <img src={"https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/27/1467979160-harry-potter-philosophers-sorting-hat.jpg?resize=980:*"} alt={"image of sorting head"}/>
-        </div>
-    )
-}
+
+            const [sort, setSort] = useState("")
+
+            function getHouse(){
+                const houses = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"]
+                const randomNumber = Math.floor(Math.random() * houses.length)
+                setSort(houses[randomNumber])
+            }
+
+
+            return (
+                <div className={"homepage"}>
+                    <p className={"p-homepage"}>Zu welchem Haus gehörst du?</p>
+                    <button className={"button-sorting"} onClick={getHouse}>Setze den Hut auf</button>
+                    <p>Dein Haus ist: {sort} </p>
+                </div>
+            )
+        }

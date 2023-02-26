@@ -1,14 +1,21 @@
-.homepage{
+.homepage {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     background-color: maroon;
 
 }
 
-.p-homepage{
+.p-homepage {
     color: gold;
     font-size: large;
     font-family: cursive;
+}
+
+.button-sorting {
+    background-color: burlywood;
+    height: 100px;
+    width: 150px;
+    justify-content: center;
+
 }
