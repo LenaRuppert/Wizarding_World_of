@@ -8,6 +8,7 @@ type HomepageProps = {
 
 export default function HomePage(){
 
+
             const [sort, setSort] = useState("")
 
             function getHouse(){
@@ -25,3 +26,4 @@ export default function HomePage(){
                 </div>
             )
         }
+

@@ -2,13 +2,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: maroon;
 
 }
 
-.p-homepage {
-    color: gold;
-    font-size: large;
+.p-homepage{
+    color: black;
+    font-size: xx-large;
     font-family: cursive;
 }
 .sorting-head{
