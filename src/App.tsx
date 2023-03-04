@@ -14,7 +14,6 @@ function App() {
 
     const [characters, setCharacters] = useState<Character[]>([])
 
-
     function loadCharacters() {
         axios.get("https://hp-api.onrender.com/api/characters")
             .then((response) => {
@@ -28,6 +27,7 @@ function App() {
     useEffect(() => {
         loadCharacters()
     }, [])
+
 
     return (
         <div className="App">
