@@ -21,7 +21,7 @@ export default function HomePage(){
             return (
                 <div className={"homepage"}>
                     <p className={"p-homepage"}>Zu welchem Haus gehörst du?</p>
-                    <img className={"sorting-head"} src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHAAuTDMjhD3d9VvtLaSowd9njGbYlAwivA&usqp=CAU"} onClick={getHouse}/>
+                    <img className={"sorting-head"} src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHAAuTDMjhD3d9VvtLaSowd9njGbYlAwivA&usqp=CAU"} alt="image of head" onClick={getHouse}/>
                     <p> {sort} </p>
                 </div>
             )
