@@ -20,8 +20,8 @@ export default function HomePage(){
             return (
                 <div className={"homepage"}>
                     <p className={"p-homepage"}>Zu welchem Haus gehörst du?</p>
-                    <button className={"button-sorting"} onClick={getHouse}>Setze den Hut auf</button>
-                    <p>Dein Haus ist: {sort} </p>
+                    <img className={"sorting-head"} src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHAAuTDMjhD3d9VvtLaSowd9njGbYlAwivA&usqp=CAU"} onClick={getHouse}/>
+                    <p> {sort} </p>
                 </div>
             )
         }

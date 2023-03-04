@@ -11,11 +11,11 @@
     font-size: large;
     font-family: cursive;
 }
+.sorting-head{
+    width: 220px;
+    height: 320px;
+}
 
-.button-sorting {
-    background-color: burlywood;
-    height: 100px;
-    width: 150px;
-    justify-content: center;
-
+.sort {
+    font-size: x-large;
 }
